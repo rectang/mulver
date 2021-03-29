@@ -3,6 +3,9 @@ use std::fmt;
 #[cfg(test)]
 mod tests;
 
+/// Mulver-specific Result type.
+pub type Result<T> = std::result::Result<T, MulverError>;
+
 /// An error which occurs inside Mulver.
 #[derive(Debug)]
 pub enum MulverError {
